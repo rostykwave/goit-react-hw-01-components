@@ -1,12 +1,14 @@
-import Profile from 'components/Profile/Profile';
-import user from '../user.json';
-import Section from 'components/Statistics/Section'
+// import Profile from 'components/Profile/Profile';
+// import user from '../user.json';
+
+import Statistics from 'components/Statistics/Statistics'
 import data from '../data.json';
 
 
 export const App = () => {
   return (
     <div>
+
       {/* <Profile
         username={user.username}
         tag={user.tag}
@@ -14,11 +16,14 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       /> */}
-      <Section
+
+      <Statistics
         title="Upload stats"
         stats={data}
       />
+
     </div>
+
   );
 };
 
