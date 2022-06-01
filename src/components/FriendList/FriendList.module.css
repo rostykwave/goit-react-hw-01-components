@@ -1,3 +1,7 @@
-.friendList {
+.stat-list {
   list-style: none;
+  padding: 0;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
 }
