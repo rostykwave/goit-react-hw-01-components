@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import s from './Statistics.module.css';
 import getRandomHexColor from '../Functions/getRandomHexColor';
 
-const Statistics = ({ title, stats }) => {
+export const Statistics = ({ title, stats }) => {
   return (
     <section className={s.statistics}>
       <h2 className={s.title}>{title}</h2>
@@ -30,5 +30,3 @@ Statistics.propTypes = {
     })
   ),
 };
-
-export default Statistics;

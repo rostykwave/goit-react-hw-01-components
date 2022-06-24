@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import s from './Profile.module.css';
 
-const Profile = ({ avatar, username, tag, location, stats }) => {
+export const Profile = ({ avatar, username, tag, location, stats }) => {
   // const { avatar, username, tag, location, stats } = props;
   const { followers, views, likes } = stats;
 
@@ -39,5 +39,3 @@ Profile.propTypes = {
   avatar: PropTypes.string.isRequired,
   stats: PropTypes.object.isRequired,
 };
-
-export default Profile;
