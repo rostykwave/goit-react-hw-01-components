@@ -1,4 +1,6 @@
-.profile {
+import styled from '@emotion/styled';
+
+export const Card = styled.div`
   width: 300px;
   margin-left: auto;
   margin-right: auto;
@@ -9,37 +11,39 @@
 
   -webkit-box-shadow: 0px 10px 33px -25px rgba(0, 0, 0, 0.54);
   box-shadow: 0px 10px 33px -25px rgba(0, 0, 0, 0.54);
-}
+`;
 
-img {
-  display: block;
+export const Description = styled.div`
+padding: 5px;
+`;
+
+export const AvatarImage = styled.img`
+display: block;
   max-width: 100%;
   height: auto;
-}
 
-.avatar {
-  border-radius: 50%;
+    border-radius: 50%;
   width: 60%;
   margin-right: auto;
   margin-left: auto;
-}
+`;
 
-.name {
-  font-weight: 700;
+export const Name = styled.p`
+ font-weight: 700;
   font-size: 25px;
 
   color: black;
-}
+`;
 
-.stats {
+export const Stats = styled.ul`
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   background-color: #f3f6f9;
-}
+`;
 
-.stats > li {
+export const Item = styled.li`
   width: 100%;
   padding: 8px;
 
@@ -47,8 +51,8 @@ img {
   flex-direction: column;
 
   border: 1px solid #ebeff4;
-}
+`;
 
-.quantity {
-  font-weight: 700;
-}
+export const Quantity = styled.li`
+ font-weight: 700;
+`;
