@@ -14,7 +14,7 @@ export const Section = styled.div`
 `;
 
 export const Title = styled.h2`
-color: ${({ theme }) => theme.colors.primaryText};
+color: ${props => props.theme.colors.primaryText};
 `;
 
 export const StatList = styled.ul`
@@ -32,6 +32,8 @@ export const Item = styled.li`
   flex-direction: column;
 
   color: #fff;
+
+  background-color: ${props=> props.bgcolor};
 `;
 
 export const Label = styled.span`

@@ -36,7 +36,7 @@ export const Name = styled.p`
   font-size: 25px;
 
   // color: black;
-  color: ${({theme})=> theme.colors.primaryText};
+  color: ${props => props.theme.colors.primaryText};
 `;
 
 export const Stats = styled.ul`
@@ -57,6 +57,6 @@ export const Item = styled.li`
   border: 1px solid #ebeff4;
 `;
 
-export const Quantity = styled.li`
+export const Quantity = styled.span`
  font-weight: 700;
 `;
