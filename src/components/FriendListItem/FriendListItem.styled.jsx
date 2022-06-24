@@ -1,4 +1,6 @@
-.item {
+import styled from '@emotion/styled';
+
+export const Friend = styled.li`
   display: flex;
   align-items: center;
 
@@ -6,36 +8,33 @@
 
   -webkit-box-shadow: 0px 10px 33px -25px #000000;
   box-shadow: 0px 10px 33px -25px #000000;
-}
+`;
 
-.status {
+export const OnlineStatus = styled.span`
   display: block;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-}
 
-.true {
-  composes: status;
-  background-color: green;
-}
+   background-color: ${props => {
 
-.false {
-  composes: status;
-  background-color: red;
-}
+    if (props.status){
+      return '#008000';
+    }
 
-img {
+    return '#ff0000';
+   }}
+`;
+
+export const Avatar = styled.img`
   display: block;
   max-width: 100%;
   height: auto;
-}
 
-.avatar {
   margin-left: 7px;
-}
+`;
 
-.name {
+export const Name = styled.p`
   margin-left: 7px;
   font-weight: 700;
-}
+`;
