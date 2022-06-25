@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import { Card, Description, AvatarImage, Name, Stats, Item, Quantity } from './Profile.styled';
 
 export const Profile = ({ avatar, username, tag, location, stats }) => {
-  // const { avatar, username, tag, location, stats } = props;
   const { followers, views, likes } = stats;
 
   return (
