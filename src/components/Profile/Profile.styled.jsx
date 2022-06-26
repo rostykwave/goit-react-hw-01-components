@@ -7,16 +7,16 @@ export const Card = styled.div`
   text-align: center;
   padding-top: 20px;
 
-  color: ${props => props.theme.colors.secondaryText};
+  color: ${p => p.theme.colors.secondaryText};
 
-  &:hover,
-  &:focus {
-    box-shadow: ${props => props.theme.shadows.light};
+  :hover,
+  :focus {
+    box-shadow: ${p => p.theme.shadows.light};
   }
 `;
 
 export const Description = styled.div`
-  padding: 5px;
+  padding: ${p => p.theme.space[2]}px;
 `;
 
 export const AvatarImage = styled.img`
@@ -31,16 +31,16 @@ export const AvatarImage = styled.img`
 
 export const Name = styled.p`
   font-weight: 700;
-  font-size: 25px;
-  color: ${props => props.theme.colors.primaryText};
+  font-size: ${p => p.theme.fontSizes.l};
+  color: ${p => p.theme.colors.primaryText};
 `;
 
 export const Stats = styled.ul`
   list-style: none;
-  padding: 0;
+  padding: ${p => p.theme.space[0]}px;
   margin: 0;
   display: flex;
-  background-color: ${props => props.theme.colors.secondaryBg};
+  background-color: ${p => p.theme.colors.secondaryBg};
 `;
 
 export const Item = styled.li`
@@ -50,7 +50,7 @@ export const Item = styled.li`
   display: flex;
   flex-direction: column;
 
-  border: ${props => props.theme.border};
+  border: ${p => p.theme.border};
 `;
 
 export const Quantity = styled.span`

@@ -6,13 +6,8 @@ export const OnlineStatus = styled.span`
   height: 20px;
   border-radius: 50%;
 
-  background-color: ${props => {
-    if (props.status) {
-      return '#008000';
-    }
-
-    return '#ff0000';
-  }};
+  background-color: ${({ status, theme }) =>
+    status ? theme.colors.approve : theme.colors.deny};
 `;
 
 export const Avatar = styled.img`
@@ -20,10 +15,11 @@ export const Avatar = styled.img`
   max-width: 100%;
   height: auto;
 
-  margin-left: 7px;
+  margin-left: ${p => p.theme.space[3]}px;
 `;
 
 export const Name = styled.p`
   margin-left: 7px;
   font-weight: 700;
+  font-size: ${p => p.theme.fontSizes.m};
 `;

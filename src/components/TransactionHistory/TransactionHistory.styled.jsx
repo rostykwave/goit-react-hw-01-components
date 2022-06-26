@@ -5,14 +5,14 @@ export const Transactions = styled.table`
   margin-right: auto;
   margin-left: auto;
 
-  &:hover,
-  &:focus {
-    box-shadow: ${props => props.theme.shadows.bold};
+  :hover,
+  :focus {
+    box-shadow: ${p => p.theme.shadows.bold};
   }
 
   thead {
     height: 40px;
-    background-color: ${props => props.theme.colors.thead};
+    background-color: ${p => p.theme.colors.thead};
   }
 
   tbody > tr {
@@ -20,7 +20,7 @@ export const Transactions = styled.table`
   }
 
   tbody > tr:nth-of-type(2n) {
-    background-color: ${props => props.theme.colors.tbody};
+    background-color: ${p => p.theme.colors.tbody};
   }
 
   td {
