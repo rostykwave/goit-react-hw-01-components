@@ -8,7 +8,7 @@ export const theme = Object.freeze({
     thead: '#7fffd4',
     tbody: '#f2f2f2',
   },
-  boxShadow: {
+  shadows: {
     bold: '0px 10px 33px -25px rgba(0, 0, 0, 1);',
     medium: '0px 10px 33px -25px rgba(0, 0, 0, 0.54)',
     light: '0px 10px 33px -25px rgba(0, 0, 0, 0.38)',

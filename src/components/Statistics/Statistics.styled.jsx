@@ -9,7 +9,7 @@ export const Section = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  box-shadow: ${props => props.theme.boxShadow.light};
+  box-shadow: ${props => props.theme.shadows.light};
 `;
 
 export const Title = styled.h2`

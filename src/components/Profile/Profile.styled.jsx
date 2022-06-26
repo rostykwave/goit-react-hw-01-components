@@ -11,7 +11,7 @@ export const Card = styled.div`
 
   &:hover,
   &:focus {
-    box-shadow: ${props => props.theme.boxShadow.light};
+    box-shadow: ${props => props.theme.shadows.light};
   }
 `;
 

@@ -7,7 +7,7 @@ export const Transactions = styled.table`
 
   &:hover,
   &:focus {
-    box-shadow: ${props => props.theme.boxShadow.bold};
+    box-shadow: ${props => props.theme.shadows.bold};
   }
 
   thead {

@@ -16,6 +16,6 @@ export const FriendItemStyle = styled.li`
 
   &:hover,
   &:focus {
-    box-shadow: ${props => props.theme.boxShadow.bold};
+    box-shadow: ${props => props.theme.shadows.bold};
   }
 `;
