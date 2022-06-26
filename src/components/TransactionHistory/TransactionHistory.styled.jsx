@@ -5,28 +5,25 @@ export const Transactions = styled.table`
   margin-right: auto;
   margin-left: auto;
 
-   &:hover, 
-  &:focus{
- 
-  box-shadow: 0px 10px 33px -25px #000000;
+  &:hover,
+  &:focus {
+    box-shadow: ${props => props.theme.boxShadow.bold};
   }
 
-  
-thead {
-     height: 40px;
-  background-color: aquamarine;
+  thead {
+    height: 40px;
+    background-color: ${props => props.theme.colors.thead};
   }
 
-tbody > tr {
-  height: 40px;
-}
+  tbody > tr {
+    height: 40px;
+  }
 
-tbody > tr:nth-of-type(2n) {
-  background-color: #f2f2f2;
-}
+  tbody > tr:nth-of-type(2n) {
+    background-color: ${props => props.theme.colors.tbody};
+  }
 
-td {
-  text-align: center;
-}
-
+  td {
+    text-align: center;
+  }
 `;

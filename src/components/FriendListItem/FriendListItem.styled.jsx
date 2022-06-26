@@ -6,10 +6,9 @@ export const Friend = styled.li`
 
   padding: 13px 15px;
 
-
-  &:hover, 
-  &:focus{
-  box-shadow: 0px 10px 33px -25px #000000;
+  &:hover,
+  &:focus {
+    box-shadow: ${props => props.theme.boxShadow.bold};
   }
 `;
 
@@ -19,14 +18,13 @@ export const OnlineStatus = styled.span`
   height: 20px;
   border-radius: 50%;
 
-   background-color: ${props => {
-
-    if (props.status){
+  background-color: ${props => {
+    if (props.status) {
       return '#008000';
     }
 
     return '#ff0000';
-   }}
+  }};
 `;
 
 export const Avatar = styled.img`

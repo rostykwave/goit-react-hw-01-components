@@ -9,11 +9,11 @@ export const Section = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  box-shadow: 0px 10px 33px -25px rgba(0, 0, 0, 0.38);
+  box-shadow: ${props => props.theme.boxShadow.light};
 `;
 
 export const Title = styled.h2`
-color: ${props => props.theme.colors.primaryText};
+  color: ${props => props.theme.colors.primaryText};
 `;
 
 export const StatList = styled.ul`
@@ -30,13 +30,13 @@ export const Item = styled.li`
   display: flex;
   flex-direction: column;
 
-  color: #fff;
+  color: ${props => props.theme.colors.whiteText};
 
-  background-color: ${props=> props.bgcolor};
+  background-color: ${props => props.bgcolor};
 `;
 
 export const Label = styled.span`
-font-size: 15px;
+  font-size: 15px;
 `;
 
 export const Percentage = styled.span`

@@ -7,34 +7,31 @@ export const Card = styled.div`
   text-align: center;
   padding-top: 20px;
 
-  color: grey;
+  color: ${props => props.theme.colors.secondaryText};
 
-  &:hover, 
-  &:focus{
-  box-shadow: 0px 10px 33px -25px rgba(0, 0, 0, 0.54);
+  &:hover,
+  &:focus {
+    box-shadow: ${props => props.theme.boxShadow.light};
   }
 `;
 
 export const Description = styled.div`
-padding: 5px;
+  padding: 5px;
 `;
 
 export const AvatarImage = styled.img`
-display: block;
+  display: block;
   max-width: 100%;
   height: auto;
-
-    border-radius: 50%;
+  border-radius: 50%;
   width: 60%;
   margin-right: auto;
   margin-left: auto;
 `;
 
 export const Name = styled.p`
- font-weight: 700;
+  font-weight: 700;
   font-size: 25px;
-
-  // color: black;
   color: ${props => props.theme.colors.primaryText};
 `;
 
@@ -43,7 +40,7 @@ export const Stats = styled.ul`
   padding: 0;
   margin: 0;
   display: flex;
-  background-color: #f3f6f9;
+  background-color: ${props => props.theme.colors.secondaryBg};
 `;
 
 export const Item = styled.li`
@@ -53,9 +50,9 @@ export const Item = styled.li`
   display: flex;
   flex-direction: column;
 
-  border: 1px solid #ebeff4;
+  border: ${props => props.theme.border};
 `;
 
 export const Quantity = styled.span`
- font-weight: 700;
+  font-weight: 700;
 `;
