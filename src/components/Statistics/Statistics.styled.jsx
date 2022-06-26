@@ -9,7 +9,6 @@ export const Section = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  -webkit-box-shadow: 0px 10px 33px -25px rgba(0, 0, 0, 0.38);
   box-shadow: 0px 10px 33px -25px rgba(0, 0, 0, 0.38);
 `;
 

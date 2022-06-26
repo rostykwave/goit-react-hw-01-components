@@ -7,8 +7,7 @@ export const Transactions = styled.table`
 
    &:hover, 
   &:focus{
-    
-  -webkit-box-shadow: 0px 10px 33px -25px #000000;
+ 
   box-shadow: 0px 10px 33px -25px #000000;
   }
 

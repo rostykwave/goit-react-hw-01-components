@@ -11,7 +11,6 @@ export const Card = styled.div`
 
   &:hover, 
   &:focus{
-     -webkit-box-shadow: 0px 10px 33px -25px rgba(0, 0, 0, 0.54);
   box-shadow: 0px 10px 33px -25px rgba(0, 0, 0, 0.54);
   }
 `;
