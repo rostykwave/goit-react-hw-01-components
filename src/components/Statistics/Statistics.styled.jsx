@@ -40,6 +40,6 @@ export const Label = styled.span`
 `;
 
 export const Percentage = styled.span`
-  margin-top: 5px;
+  margin-top: ${p => p.theme.space[2]}px;
   font-size: ${p => p.theme.fontSizes.l};
 `;
