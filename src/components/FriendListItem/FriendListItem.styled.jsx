@@ -1,17 +1,5 @@
 import styled from '@emotion/styled';
 
-export const Friend = styled.li`
-  display: flex;
-  align-items: center;
-
-  padding: 13px 15px;
-
-  &:hover,
-  &:focus {
-    box-shadow: ${props => props.theme.boxShadow.bold};
-  }
-`;
-
 export const OnlineStatus = styled.span`
   display: block;
   width: 20px;

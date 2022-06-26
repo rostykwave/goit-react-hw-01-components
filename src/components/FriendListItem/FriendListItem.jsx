@@ -1,14 +1,14 @@
+import { FriendItemStyle } from 'components/FriendList/FriendList.styled';
 import PropTypes from 'prop-types';
-import { Avatar, Friend, Name, OnlineStatus } from './FriendListItem.styled';
+import { Avatar, Name, OnlineStatus } from './FriendListItem.styled';
 
 export const FriendListItem = ({ isOnline, avatar, name }) => {
   return (
-    <Friend>
-      <OnlineStatus
-      status={isOnline}/>
+    <FriendItemStyle>
+      <OnlineStatus status={isOnline} />
       <Avatar src={avatar} alt="User avatar" width="48" />
       <Name>{name}</Name>
-    </Friend>
+    </FriendItemStyle>
   );
 };
 
