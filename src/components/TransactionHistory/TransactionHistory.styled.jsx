@@ -1,29 +1,27 @@
 import styled from '@emotion/styled';
 
-export const Transactions = styled.table`
+export const Table = styled.table`
   width: 60%;
   margin-right: auto;
   margin-left: auto;
 
   :hover,
   :focus {
-    box-shadow: ${p => p.theme.shadows.bold};
+    box-shadow: ${({ theme }) => theme.shadows.bold};
   }
+`;
 
-  thead {
-    height: 40px;
-    background-color: ${p => p.theme.colors.thead};
-  }
+export const TableHead = styled.thead`
+  height: 40px;
+  background-color: ${({ theme }) => theme.colors.thead};
+`;
 
-  tbody > tr {
-    height: 40px;
+export const TableRow = styled.tr`
+  height: 40px;
+  :nth-of-type(2n) {
+    background-color: ${({ theme }) => theme.colors.tbody};
   }
-
-  tbody > tr:nth-of-type(2n) {
-    background-color: ${p => p.theme.colors.tbody};
-  }
-
-  td {
-    text-align: center;
-  }
+`;
+export const TableData = styled.td`
+  text-align: center;
 `;

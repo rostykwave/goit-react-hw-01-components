@@ -4,11 +4,11 @@ export const FriendItemStyle = styled.li`
   display: flex;
   align-items: center;
 
-  padding: ${p => p.theme.space[4]}px ${p => p.theme.space[5]}px;
+  padding: ${({ theme }) => theme.space[4]}px ${p => p.theme.space[5]}px;
 
   :hover,
   :focus {
-    box-shadow: ${p => p.theme.shadows.bold};
+    box-shadow: ${({ theme }) => theme.shadows.bold};
   }
 `;
 
@@ -18,8 +18,8 @@ export const OnlineStatus = styled.span`
   height: 20px;
   border-radius: 50%;
 
-  background-color: ${({ status, theme }) =>
-    status ? theme.colors.approve : theme.colors.deny};
+  background-color: ${({ isOnline, theme }) =>
+    isOnline ? theme.colors.approve : theme.colors.deny};
 `;
 
 export const Avatar = styled.img`
@@ -27,11 +27,11 @@ export const Avatar = styled.img`
   max-width: 100%;
   height: auto;
 
-  margin-left: ${p => p.theme.space[3]}px;
+  margin-left: ${({ theme }) => theme.space[3]}px;
 `;
 
 export const Name = styled.p`
   margin-left: 7px;
   font-weight: 700;
-  font-size: ${p => p.theme.fontSizes.m};
+  font-size: ${({ theme }) => theme.fontSizes.m};
 `;

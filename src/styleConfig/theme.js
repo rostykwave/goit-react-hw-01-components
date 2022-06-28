@@ -24,5 +24,4 @@ export const theme = Object.freeze({
     medium: '0px 10px 33px -25px rgba(0, 0, 0, 0.54)',
     light: '0px 10px 33px -25px rgba(0, 0, 0, 0.38)',
   },
-  border: '1px solid #ebeff4',
 });
